@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<page>
+    <database name="momtime_eshop">
+        <table name="lottery_activities">
+            <sql id="select * from lottery_activities where activity_name=全部商家 ">
+            </sql>
+            <sql id="delete * from lottery_activities where activity_name=全部商家">
+            </sql>>
+        </table>>
+    </database>>
+</page>>
