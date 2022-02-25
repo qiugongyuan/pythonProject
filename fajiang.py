@@ -34,7 +34,7 @@ for phone in phones:
            "totalMoney":"120",
            "lotteryActivityId":54,
            "phone":phone
-            #13205188562
+
         }
         url = "https://platform-test-api.momtime.com/app/lotteryActivity/randomAwardSend"
         luckyUrl = requests.post(url=url, data=json.dumps(data),headers=headers)
