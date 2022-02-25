@@ -1,3 +1,4 @@
+import configparser
 import logging
 import os
 import threading
@@ -8,6 +9,7 @@ import readconfig
 class Log:
     def __init__(self):
         global logPath, resultPath, proDir
+        localReadConfig = configparser.ConfigParser()
         proDir = readconfig.proDir
         resultPath = os.path.join(proDir, "result")
         # create result file if it doesn't exist
