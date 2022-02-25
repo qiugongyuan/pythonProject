@@ -1,6 +1,5 @@
 import codecs
 import json
-
 import requests
 
 source = codecs.open("E:\\testfile\\performance\\fajiang.txt", "r", "gb18030")
