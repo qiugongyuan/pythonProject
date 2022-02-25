@@ -11,12 +11,12 @@ conn = pymysql.connect(
     charset='utf8'
 )
 t = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
-t2 = '2022-02-24 23:59:59'
+t2 = '2022-02-28 23:59:59'
 tns = datetime.datetime.now()
 print(tns)
 cur = conn.cursor()
 count = 1
-while count < 3:
+while count < 2:
     count += 1
     activity_name = '测试活动' + str(count)
     sql = '''INSERT INTO lottery_activities(`activity_name`, `start_date`, `end_date`,`activity_targets`, `limt`, `rule_of_get`, `the_goods`, `award_provider_type`, `awards`,`days_after`, `remark`,`detail`,`lottery_status`,`create_time`,`to_target`,`banner`,`activity_img`,`background_colour`,`background_img`,`button_img`,`button_colour`) \

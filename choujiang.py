@@ -14,7 +14,7 @@ data={
   "codeCount":1
 }
 n = 0
-while n < 21:
+while n < 2:
     # 抽奖接口
     url = "https://platform-test-api.momtime.com/platform-eshop/lotteryActivity/randomAward"
     luckyUrl = requests.post(url=url, data=json.dumps(data),headers=headers)
